@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: #ADD8E6;
+        }
+
+        .form-container {
+            width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #ADD8E6;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #000;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 95%;
+            padding: 6px;
+            border: 1px solid #333;
+            border-radius: 3px;
+        }
+
+        textarea {
+            height: 60px;
+            resize: none;
+        }
+
+        .radio-group input {
+            margin-left: 10px;
+        }
+
+        .submit-btn {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registration Form</h2>
+
+    <form>
+        <table>
+            <tr>
+                <td>Firstname:</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Middlename:</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Lastname:</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <select>
+                        <option>Course</option>
+                        <option>BCA</option>
+                        <option>BSc</option>
+                        <option>BTech</option>
+                        <option>MCA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td class="radio-group">
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone:</td>
+                <td><input type="text" value="+91"></td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td><textarea></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email"></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password"></td>
+            </tr>
+
+            <tr>
+                <td>Re-type password:</td>
+                <td><input type="password"></td>
+            </tr>
+        </table>
+
+        <div class="submit-btn">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
